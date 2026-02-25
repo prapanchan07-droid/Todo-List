@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Todo List
+        </h1>
+    </div>
+    <div class="parentContainer1">
+        <input id="actionEntered">
+    <button class="add" onclick="addFunction()">add</button>
+    </div>
+    <ul id="listContainer" class="parentContainer">
+        
+    </ul>
+    <script>
+        var actionEntered = document.getElementById("actionEntered");
+        function addFunction() {
+            if(actionEntered.value.trim() === ""){
+                return;
+            }
+            var ul = document.querySelector("ul");
+            var li = document.createElement("li");
+            li.innerHTML = actionEntered.value + "<button class='delete' onclick='deleteFunction(event)'>delete</button>";
+            ul.insertAdjacentElement("beforeend", li);
+        }
+        function deleteFunction(event) {
+            var li = event.target.parentElement;
+            li.remove();
+        }
+
+    </script>
+</body>
+</html>

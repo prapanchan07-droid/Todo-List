@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(to right, #c90d91, #d31616);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.header{
+    text-align: center;
+    color: white;
+    
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+button.add{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+button.add:hover{
+    background-color: #45a049;
+}
+button.add:active{
+    background-color: #3e8e41;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+button.delete{
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+}
+li{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parentContainer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.parentContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 95%;
+    margin-left:32px ;
+}
